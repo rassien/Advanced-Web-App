@@ -1,0 +1,25 @@
+{
+  "name": "calisan-sube-atama",
+  "version": "1.0.0",
+  "description": "Çalışan-Şube Atama Uygulaması - React + Node.js + PostgreSQL/PostGIS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "employee-assignment",
+    "branch-allocation", 
+    "postgis",
+    "location-mapping"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
